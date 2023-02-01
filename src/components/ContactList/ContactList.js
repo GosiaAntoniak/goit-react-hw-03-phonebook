@@ -11,7 +11,7 @@ const ContactList = (props) => {
         .map((contact) => {
           return (
             <Contact key={contact.id}>
-              {contact.name} : {contact.number}{' '}
+              {contact.name} : {contact.number}{" "}
               <button id={contact.id} onClick={deleteFunction}>
                 Delete
               </button>
