@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import css from "./App.module.css";
-import { nanoid } from "nanoid";
-import ContactForm from "./components/ContactForm/ContactForm";
-import Filter from "./components/Filter/Filter";
-import ContactList from "./components/ContactList/ContactList";
+import ContactForm from "./Components/ContactForm/ContactForm";
+import Filter from "./Components/Filter/Filter";
+import ContactList from "./Components/ContactList/ContactList";
 
 const KEY = "Contacts";
 
