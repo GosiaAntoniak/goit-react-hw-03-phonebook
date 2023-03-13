@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import css from "./App.module.css";
-import ContactForm from "./Components/ContactForm/ContactForm";
-import Filter from "./Components/Filter/Filter";
-import ContactList from "./Components/ContactList/ContactList";
+import css from "../App.module.css";
+import ContactForm from "./ContactForm/ContactForm";
+import Filter from "./Filter/Filter";
+import ContactList from "./ContactList/ContactList";
 
 const KEY = "Contacts";
 
@@ -32,10 +32,9 @@ class App extends Component {
     const check = this.checkContact(newContact);
     if (!check) {
       const { contacts } = this.state;
-      contacts.push(newContact);
-      this.setState({ contacts: contacts });
+      this.setState({contacts: [...contacts, newContact]})
     } else {
-      alert(`${newContact.name} is alerdy in contacts`);
+      alert(`${newContact.name} is already in contacts`);
     }
   };
 
